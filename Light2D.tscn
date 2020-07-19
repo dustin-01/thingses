@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Light2D.gd" type="Script" id=1]
+[ext_resource path="res://2DLight.png" type="Texture" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[node name="Light2D" type="Node2D"]
+position = Vector2( 485.927, 222.286 )
+script = ExtResource( 1 )
+detail = 737
+distance = 512
+
+[node name="poly" type="Polygon2D" parent="."]
+modulate = Color( 1, 1, 1, 0.772549 )
+material = SubResource( 1 )
+texture = ExtResource( 2 )
+texture_offset = Vector2( 512, 512 )
+texture_scale = Vector2( 0.5, 0.5 )
+invert_border = 2273.1
